@@ -13,7 +13,9 @@ public class PrimeTester {
      * @param n the number to test
      * @return true iff n is prime
      */
-    public static boolean isPrime(long n) {
+    public static boolean isPrime(long n)
+    {
+        if(n==2) return true;
         //check if n is a multiple of 2
         if(n%2==0) return false;
         //create a loop to count through possible numbers
